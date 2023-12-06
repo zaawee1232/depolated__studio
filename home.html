@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>DeepL翻訳:高精度な翻訳ツール</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="/css/empty.css">
+    <link rel="stylesheet" href="/css/pure-min.css">
+    <link rel="stylesheet" href="/css/grids-responsive-min.css">
+    <link rel="stylesheet" href="/css/ionicons.min.css">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>alert('YUKI YOUTUBE')</script>
+    
+</head>
+    <script>alert('zaawee1改造版(超非公式)  V:1.4  製作・運営:zaawee1 ')</script>
+    <script>alert('掲示板のIDとか抜き取ったりはしないけど(荒らしを除く)とにかくこれは非公式だから嫌なら公式インスタンス使って')</script>
+    <script>alert('このインスタンス使ってる荒らし出た場合、ip抜き取って晒すつもりだから')</script>
+    <script>alert('2023/10/01にSTによってscratchの傾向から「過疎スタ」が消されました。できれば皆さんもSTに抗議してください。')</script>
+    <p>zaawee1改造版(非公式)  V:1.4  製作・運営:zaawee1</p>
+    <a href="/bbs" >掲示板 ←絶対荒らすな</a>
+    <body class="no-theme">
+        <div class="pure-g h-box" id="search-widget">
+            <div class="pure-u-1" id="logo">
+                <h1 href="/" class="pure-menu-heading">Yuki Youtube</h1>
+        </div>
+            <div class="pure-u-1-4"></div>
+            <div class="pure-u-1 pure-u-md-12-24 searchbar">
+                <form class="pure-form" action="/search" method="get">
+                    <fieldset>
+                        <input type="search" id="searchbox" autocomplete="on" autocorrect="on" autocapitalize="none" spellcheck="false" autofocus="" name="q" placeholder="検索" title="検索" value="">
+                    </fieldset>
+                </form>
+            </div>
+            <div class="pure-u-1-4"></div>
+            
+        </div>
+        <script>$('#searchbox').autocomplete({
+            source: function (request, response) {
+                {
+            var url = "/suggest?keyword="+ request.term
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", url);
+            xhr.onload = function() {
+                response(JSON.parse(xhr.responseText));
+            }
+            xhr.send();
+        }},delay:300});</script>
+    </body>
+    <script async src="https://cse.google.com/cse.js?cx=9638f865d695b4d7e">
+</script>
+<div class="gcse-search"></div>
+</html>
